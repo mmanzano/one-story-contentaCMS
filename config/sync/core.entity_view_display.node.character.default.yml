@@ -1,0 +1,44 @@
+uuid: 0d088b4d-914d-45f4-8b6d-aae66431deb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.character.description
+    - field.field.node.character.story
+    - node.type.character
+  module:
+    - text
+    - user
+id: node.character.default
+targetEntityType: node
+bundle: character
+mode: default
+content:
+  description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+  story:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

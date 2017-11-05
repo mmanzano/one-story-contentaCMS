@@ -1,0 +1,18 @@
+uuid: efeb91e6-7a90-4c24-9c40-ef36c3ee5ac8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Character
+type: character
+description: 'A character of a story with name and description'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
